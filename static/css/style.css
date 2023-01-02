@@ -1,5 +1,11 @@
 body {
-    font-family: 'Manrope', sans-serif;
-    font-size: 1em;
-    background-color: #140435;
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1em;
+  color: aliceblue;
+  background-size: 100%;
+  margin: center;
+  /* background-position: 50%; */
+  background-position-y: 10%;
+  background-image: url("/static/images/triangle2.jpeg");
   }
