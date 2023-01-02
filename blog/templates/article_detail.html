@@ -1,4 +1,7 @@
-{% load static %}
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- {% load static %} -->
 
 <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
 
@@ -23,3 +26,5 @@
     <!-- lien flèche retour ave emoji -->
     <a href="{% url 'home' %}">⬅️</a>
 </body>
+
+{% endblock %}

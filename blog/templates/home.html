@@ -1,4 +1,8 @@
-{% load static %}
+{% extends 'base.html' %}
+{% block content %}
+
+
+<!-- {% load static %} -->
 
 <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
 
@@ -11,10 +15,11 @@
     
 
 </head>
-
+    
 <body>
     
-    <h1> dev.py <🐍/> </h1>
+    <h1>  {dev.py} </h1>
+   
     <hr><br>
    
     <ul>
@@ -24,6 +29,16 @@
     {% endfor %}
     </ul>
     <!-- <body background="static/images/background.jpeg"></body> -->
+  
 </body>
 
 <br><hr>
+
+<footer>  
+    <a href="https://github.com/erwan-rozet" class="lien-icone" target="_blank">
+    <img src="static/images/github.png"  class="lien-icone" alt="Logo GitHub" >
+    </a>
+</footer>
+
+{% endblock %}
+

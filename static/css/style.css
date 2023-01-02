@@ -6,6 +6,17 @@ body {
   background-size: 100%;
   margin: center;
   /* background-position: 50%; */
-  background-position-y: 10%;
-  background-image: url("/static/images/triangle2.jpeg");
+  /* background-position-y: 10%; */
+  background-image: url("/static/images/sep09.jpg");
+ 
+  
   }
+
+.lien-icone {
+  width: 50px;
+	height: 50px;
+}
+
+.lien-icone:hover {
+  opacity: 0.7;
+}
