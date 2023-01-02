@@ -1,0 +1,25 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" >
+    <title>Articles</title>
+
+</head>
+
+<body>
+    <h1>{{ post.title }}</h1>
+    <small>By : {{ post.author.first_name }} {{ post.author.last_name}}</small><br/>
+    <hr>
+    <br/>
+    {{ post.body }}
+
+    <br/><br/>
+
+    <!-- lien flèche retour ave emoji -->
+    <a href="{% url 'home' %}">⬅️</a>
+</body>
