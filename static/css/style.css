@@ -5,8 +5,6 @@ body {
   color: aliceblue;
   background-size: 100%;
   margin: center;
-  /* background-position: 50%; */
-  /* background-position-y: 10%; */
   background-image: url("/static/images/sep09.jpg");  
 }
 
