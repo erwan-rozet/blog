@@ -22,3 +22,8 @@ body {
   margin-right: auto;
   width: 60%;
 }
+
+.btn {
+  border-radius: 50px;
+}
+
