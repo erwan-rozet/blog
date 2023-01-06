@@ -18,3 +18,4 @@ class AddPostView(CreateView):
     model = Post
     template_name  = 'add_post.html'
     fields = '__all__'
+    # field = ('title, 'body') ### Pour ajouter seulement certains fields

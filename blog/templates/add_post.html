@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% block title %}Create a new blog post{% endblock %}
 {% block content %}
 
 
@@ -21,11 +22,13 @@
     
     <h1>Add post</h1>
     <br><br>
-    <from method="POST">
+    <form method="POST">
         {% csrf_token %}
-        {{ form.as_p }}
+        <!-- form.as_p -> form.as_ul etc p = <p> ul = <ul>,  <table> etc etc... -->
+        {{ form.as_p }}     
         <button class="btn btn-secondary">Post it</button>
 </body>
 
 {% endblock %}
 
+ 

@@ -6,6 +6,7 @@ body {
   background-size: 100%;
   margin: center;
   background-image: url("/static/images/sep09.jpg");  
+  /* background-attachment: fixed; */
 }
 
 .lien-icone {
