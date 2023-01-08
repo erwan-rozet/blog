@@ -29,8 +29,12 @@
    
     <ul>
     {% for post in object_list %}
-        <li><a href="{% url 'article-detail' post.pk %}"> {{ post.title }} </a>|| {{ post.author.first_name }} {{ post.author.last_name }}<br/>
+        <li><a href="{% url 'article-detail' post.pk %}"> {{ post.title }} </a>
+            || {{ post.author.first_name }} {{ post.author.last_name }} - 
+            <a href="{% url 'update_post' post.pk %}"><button class="btn btn-secondary btn-sm mb-2">Edit</button></a>
+            <a href="{% url 'delete_post' post.pk %}"><button class="btn btn-danger btn-sm mb-2">Delete</button></a><br/>
         {{ post.body }}</li>
+        
     {% endfor %}
     </ul>
     

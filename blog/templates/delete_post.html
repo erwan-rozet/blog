@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
-{% block title %}Create a new blog post{% endblock %}
+{% block title %}Delete a blog post{% endblock %}
 {% block content %}
+
+
 {% load static %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
@@ -11,19 +13,22 @@
 <head>
     <meta charset="utf-8" >
     <title>Accueil dev.py</title>
+
+    
+
 </head>
     
 <body>
     
-    <h1>Update post</h1>
+    <h1>Delete post</h1>
     <br><br>
+    <h3>Delete : {{ post.title }}</h3>
         <div class="form-group"> 
             <form method="POST">
-                {% csrf_token %}
-                <!-- form.as_p -> form.as_ul etc p = <p> ul = <ul>,  <table> etc etc... -->
-                {{ form.as_p }}     
-                <button class="btn btn-secondary">Edit it</button>
-                <a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
+                {% csrf_token %}  
+                <strong>Sure you want to DELETE this post ?</strong><br><br>
+                <button class="btn btn-danger">Delete anyway</button>
+                <a href="{% url 'home' %}" class="btn btn-secondary">Maybe later</a>
         </div>
       
 </body>
