@@ -20,13 +20,16 @@
 
 <body>
     <h1>{{ post.title }}</h1>
-    <small>By : {{ post.author.first_name }} {{ post.author.last_name}}</small><br/>
+    <small>By : 
+        {{ post.author.first_name }} 
+        {{ post.author.last_name}} 
+        {{ post.post_date }}</small><br/>
     <hr>
     <br/>
 
     <div class="global">
         <p>{{ post.body }}</p>
-    </div>
+    </div> 
 
     <br/><br/>
 
