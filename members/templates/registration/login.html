@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}Login{% endblock %}
+{% block content %}
+
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" >
+    <title>Accueil dev.py</title>
+
+    
+
+</head>
+    
+<body>
+    
+    <h1>Login</h1>
+    <br><br>
+        <div class="form-group"> 
+            <form method="POST">
+                {% csrf_token %}
+                <!-- form.as_p -> form.as_ul etc p = <p> ul = <ul>,  <table> etc etc... -->
+                {{ form.as_p }}     
+                <button class="btn btn-secondary">Login</button>
+                <a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
+        </div>
+      
+</body>
+
+{% endblock %}
+
+ 
